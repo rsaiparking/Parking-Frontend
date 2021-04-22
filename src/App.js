@@ -11,6 +11,7 @@ function App() {
                 <Route exact path="/" component={Index} />
                 <Route exact path="/new-component" component={NewComponent} />
                 <Route exact path="/upload-image" component={ImageUploader} />
+                <Route exact path="/testPath" component={Index} />
             </Switch>
         </BrowserRouter>
     );
