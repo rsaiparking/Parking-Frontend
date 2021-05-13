@@ -188,12 +188,15 @@ class UnparkComponent extends Component {
                 'Content-Type': 'application/json'
             }
         }).then(async response => {
-            await response.text();
-            if (response.status !== 200) {
-                alert('Information was not sent... Try again!');
-            } else {
-                window.location.reload()
+            const text = await response.text();
+            if (response.status == 400) {
+                alert("The provided plate number was not found in this parking.");
+                return;
+            } else if (response.status != 200) {
+                alert('Problem');
+                return;
             }
+            window.location.reload();
         })
     }
 

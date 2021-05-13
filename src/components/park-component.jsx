@@ -229,11 +229,14 @@ class ParkComponent extends Component {
             }
         }).then(async response => {
             await response.text();
-            if (response.status !== 200) {
-                alert('Information was not sent... Try again!');
-            } else {
-                window.location.reload()
+            if (response.status == 400) {
+                alert("The provided number is already parked.");
+                return;
+            } else if (response.status != 200) {
+                alert('Problem');
+                return;
             }
+            window.location.reload()
         })
     }
 
