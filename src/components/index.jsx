@@ -33,6 +33,8 @@ class Index extends Component {
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Parking Name</th>
+          <th scope="col">Park a car</th>
+          <th scope="col">Unpark a car</th>
           <th scope="col"></th>
         </tr>
       </thead>
