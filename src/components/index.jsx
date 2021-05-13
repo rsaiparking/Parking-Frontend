@@ -40,20 +40,20 @@ class Index extends Component {
         <tr>
           <th scope="row">{data[0]}</th>
           <td>Centar</td>
-          <td><button type="button" onClick={() => this.routeTo('/park/'+data[0])} className="btn btn-success">Park</button></td>
-          <td><button type="button" onClick={() => this.routeTo('/unpark/'+data[0])} className="btn btn-danger">Unpark</button></td>
+          <td><button type="button" onClick={() => this.routeTo('/park/' + data[0])} className="btn btn-success">Park</button></td>
+          <td><button type="button" onClick={() => this.routeTo('/unpark/' + data[0])} className="btn btn-danger">Unpark</button></td>
         </tr>
         <tr>
           <th scope="row">{data[1]}</th>
           <td>Mladost 1</td>
-          <td><button type="button" onClick={() => this.routeTo('/park/'+data[1])} className="btn btn-success">Park</button></td>
-          <td><button type="button" onClick={() => this.routeTo('/unpark/'+data[1])} className="btn btn-danger">Unpark</button></td>
+          <td><button type="button" onClick={() => this.routeTo('/park/' + data[1])} className="btn btn-success">Park</button></td>
+          <td><button type="button" onClick={() => this.routeTo('/unpark/' + data[1])} className="btn btn-danger">Unpark</button></td>
         </tr>
         <tr>
           <th scope="row">{data[2]}</th>
           <td>Studentski Grad</td>
-          <td><button type="button" onClick={() => this.routeTo('/park/'+data[2])} className="btn btn-success">Park</button></td>
-          <td><button type="button" onClick={() => this.routeTo('/unpark/'+data[2])} className="btn btn-danger">Unpark</button></td>
+          <td><button type="button" onClick={() => this.routeTo('/park/' + data[2])} className="btn btn-success">Park</button></td>
+          <td><button type="button" onClick={() => this.routeTo('/unpark/' + data[2])} className="btn btn-danger">Unpark</button></td>
         </tr>
       </tbody>
     </table>);
